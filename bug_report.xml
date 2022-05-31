@@ -1,1 +1,20 @@
-
+<?xml version="1.0" encoding="UTF-8" ?>
+<root>
+	<0>
+		<Bug_ID>1</Bug_ID>
+		<Title>Колонка сфери відображає працівників й інших сфер</Title>
+		<Severity>середня</Severity>
+		<Priority>висока</Priority>
+		<Environments>Windows 10</Environments>
+		<Environments>version 21H1</Environments>
+		<Precondition>Нема не обовязково мати реєстрацію</Precondition>
+		<Steps_to_reproduce>
+			<element>Відкрити сторінку cz.razem.work</element>
+			<element>Натиснути на Kandidati</element>
+			<element>Внизу у полі для вибору Chce pracovan v oboru вибрати будь який з пунктів</element>
+			<element>Зявляться резюме які не співпадають з вибраним критерієм</element>
+		</Steps_to_reproduce>
+		<Actual_result>Зявляться резюме лише вибраноъ сфери</Actual_result>
+		<Expected_result>Зявляються резюме й інших сфер</Expected_result>
+	</0>
+</root>
